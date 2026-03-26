@@ -27,5 +27,30 @@
   ],
   "profile": {
     "name": "typicode"
+  },
+  "user": {
+    "success": true,
+    "message": "Login successful",
+    "statusCode": 200,
+    "data": {
+      "user": {
+        "id": "a3f8c1d2-4e56-7890-abcd-ef1234567890",
+        "username": "johndoe",
+        "email": "johndoe@example.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "role": "user",
+        "avatarUrl": "https://example.com/avatars/johndoe.png",
+        "createdAt": "2024-06-15T08:30:00.000Z",
+        "lastLoginAt": "2026-03-26T14:22:10.000Z"
+      },
+      "tokens": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhM2Y4YzFkMi00ZTU2LTc4OTAtYWJjZC1lZjEyMzQ1Njc4OTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0MzAwMDAwMCwiZXhwIjoxNzQzMDAzNjAwfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        "refreshToken": "dGhpcyBpcyBhIHNhbXBsZSByZWZyZXNoIHRva2Vu",
+        "tokenType": "Bearer",
+        "expiresIn": 3600
+      }
+    },
+    "timestamp": "2026-03-26T14:22:10.123Z"
   }
 }
