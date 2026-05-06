@@ -1,125 +1,84 @@
 {
-    "posts": [
-        {
-            "id": 1,
-            "title": "Post 1"
-        },
-        {
-            "id": 2,
-            "title": "Post 2"
-        },
-        {
-            "id": 3,
-            "title": "Post 3"
-        }
-    ],
-    "comments": [
-        {
-            "id": 1,
-            "body": "some comment",
-            "postId": 1
-        },
-        {
-            "id": 2,
-            "body": "some comment",
-            "postId": 1
-        }
-    ],
-    "profile": {
-        "name": "typicode"
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post 1"
     },
-    "user": {
-        "success": true,
-        "message": "Login successful",
-        "statusCode": 200,
-        "data": {
-            "user": {
-                "id": "a3f8c1d2-4e56-7890-abcd-ef1234567890",
-                "username": "johndoe",
-                "email": "johndoe@example.com",
-                "firstName": "John",
-                "lastName": "Doe",
-                "role": "user",
-                "avatarUrl": "https://example.com/avatars/johndoe.png",
-                "createdAt": "2024-06-15T08:30:00.000Z",
-                "lastLoginAt": "2026-03-26T14:22:10.000Z"
+    {
+      "id": 2,
+      "title": "Post 2"
+    },
+    {
+      "id": 3,
+      "title": "Post 3"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "id": 2,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "user": {
+    "success": true,
+    "message": "Login successful",
+    "statusCode": 200,
+    "data": {
+      "user": {
+        "id": "a3f8c1d2-4e56-7890-abcd-ef1234567890",
+        "username": "johndoe",
+        "email": "johndoe@example.com",
+        "firstName": "John",
+        "lastName": "Doe",
+        "role": "user",
+        "avatarUrl": "https://example.com/avatars/johndoe.png",
+        "createdAt": "2024-06-15T08:30:00.000Z",
+        "lastLoginAt": "2026-03-26T14:22:10.000Z"
+      },
+      "tokens": {
+        "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhM2Y4YzFkMi00ZTU2LTc4OTAtYWJjZC1lZjEyMzQ1Njc4OTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0MzAwMDAwMCwiZXhwIjoxNzQzMDAzNjAwfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+        "refreshToken": "dGhpcyBpcyBhIHNhbXBsZSByZWZyZXNoIHRva2Vu",
+        "tokenType": "Bearer",
+        "expiresIn": 3600
+      }
+    },
+    "timestamp": "2026-03-26T14:22:10.123Z"
+  },
+  "place": {
+    "results": [
+        {
+        "formatted_address": "123 Nguyen Hue Blvd, District 1, Ho Chi Minh City, Vietnam",
+        "geometry": {
+            "location": {
+            "lat": 10.7769,
+            "lng": 106.7009
             },
-            "tokens": {
-                "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhM2Y4YzFkMi00ZTU2LTc4OTAtYWJjZC1lZjEyMzQ1Njc4OTAiLCJyb2xlIjoidXNlciIsImlhdCI6MTc0MzAwMDAwMCwiZXhwIjoxNzQzMDAzNjAwfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
-                "refreshToken": "dGhpcyBpcyBhIHNhbXBsZSByZWZyZXNoIHRva2Vu",
-                "tokenType": "Bearer",
-                "expiresIn": 3600
+            "location_type": "ROOFTOP",
+            "viewport": {
+            "northeast": { "lat": 10.7782, "lng": 106.7022 },
+            "southwest": { "lat": 10.7756, "lng": 106.6996 }
             }
         },
-        "timestamp": "2026-03-26T14:22:10.123Z"
-    },
-    "place": {
-        "results": [
-            {
-                "formatted_address": "123 Nguyen Hue Blvd, District 1, Ho Chi Minh City, Vietnam",
-                "geometry": {
-                    "location": {
-                        "lat": 10.7769,
-                        "lng": 106.7009
-                    },
-                    "location_type": "ROOFTOP",
-                    "viewport": {
-                        "northeast": {
-                            "lat": 10.7782,
-                            "lng": 106.7022
-                        },
-                        "southwest": {
-                            "lat": 10.7756,
-                            "lng": 106.6996
-                        }
-                    }
-                },
-                "place_id": "ChIJo4qlDZ0vdTERfnlKxhSEpAA",
-                "types": [
-                    "street_address"
-                ],
-                "address_components": [
-                    {
-                        "long_name": "123",
-                        "short_name": "123",
-                        "types": [
-                            "street_number"
-                        ]
-                    },
-                    {
-                        "long_name": "Nguyen Hue Boulevard",
-                        "short_name": "Nguyen Hue Blvd",
-                        "types": [
-                            "route"
-                        ]
-                    },
-                    {
-                        "long_name": "District 1",
-                        "short_name": "District 1",
-                        "types": [
-                            "political",
-                            "sublocality"
-                        ]
-                    },
-                    {
-                        "long_name": "Ho Chi Minh City",
-                        "short_name": "HCM",
-                        "types": [
-                            "locality",
-                            "political"
-                        ]
-                    },
-                    {
-                        "long_name": "Vietnam",
-                        "short_name": "VN",
-                        "types": [
-                            "country",
-                            "political"
-                        ]
-                    }
-                ]
-            }
-        ],
-        "status": "OK"
+        "place_id": "ChIJo4qlDZ0vdTERfnlKxhSEpAA",
+        "types": ["street_address"],
+        "address_components": [
+            { "long_name": "123", "short_name": "123", "types": ["street_number"] },
+            { "long_name": "Nguyen Hue Boulevard", "short_name": "Nguyen Hue Blvd", "types": ["route"] },
+            { "long_name": "District 1", "short_name": "District 1", "types": ["political", "sublocality"] },
+            { "long_name": "Ho Chi Minh City", "short_name": "HCM", "types": ["locality", "political"] },
+            { "long_name": "Vietnam", "short_name": "VN", "types": ["country", "political"] }
+        ]
+        }
+    ],
+    "status": "OK"
     }
 }
